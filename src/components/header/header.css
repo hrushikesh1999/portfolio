@@ -1,0 +1,9 @@
+.header {
+  padding-bottom: 0.75rem;
+}
+.header-title {
+  text-decoration: underline 1.5px;
+}
+.header-icon {
+  padding-left: 0.5rem;
+}

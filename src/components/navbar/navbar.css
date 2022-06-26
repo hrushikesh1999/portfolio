@@ -1,0 +1,11 @@
+.navbar {
+  display: flex;
+}
+.side-drawer {
+  height: 100vh;
+  text-align: center;
+}
+.navbar-logo {
+  display: flex;
+  justify-content: center;
+}
