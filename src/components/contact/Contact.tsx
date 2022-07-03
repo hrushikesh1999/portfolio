@@ -60,7 +60,7 @@ const Contact = () => {
       <Grid container spacing={3} className="contact-container">
         <Grid item xs={12} sm={6}>
           <motion.form
-            action="https://formspree.io/f/xbjwvrvw"
+            action={process.env.REACT_APP_POST_EMAIL}
             method="POST"
             variants={container}
             initial="hidden"
