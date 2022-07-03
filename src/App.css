@@ -11,6 +11,27 @@ a {
   text-decoration: none;
   color: inherit;
 }
+body::-webkit-scrollbar,
+.hideScrollBar::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #b3b5c1;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+}
+
+.hideScrollBar::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.hideScrollBar::-webkit-scrollbar-track {
+  display: none;
+}
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;

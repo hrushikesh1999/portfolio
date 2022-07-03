@@ -11,7 +11,7 @@ type HeaderProps = {
 const Header = ({ title, icon }: HeaderProps) => {
   return (
     <div className="header">
-      <Typography variant="h4" color="secondary.dark" className="header-title">
+      <Typography variant="h4" color="primary.dark" className="header-title">
         {title}
         <span className="header-icon">
           <FontAwesomeIcon icon={icon} size="xs" />

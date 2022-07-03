@@ -1,0 +1,16 @@
+.svg-container {
+  margin: 5px;
+  display: flex;
+  place-content: center;
+  overflow: hidden;
+  /* border: 1.5px solid; */
+  /* border-radius: 5px; */
+}
+.svg-item {
+  padding: 10px;
+  width: 1rem;
+  overflow: visible;
+  stroke-width: 25;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}

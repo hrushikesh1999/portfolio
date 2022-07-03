@@ -1,8 +1,8 @@
 .header {
-  padding-bottom: 0.75rem;
+  padding-bottom: 1.5rem;
 }
 .header-title {
-  text-decoration: underline 1.5px;
+  border-bottom: 1px solid;
 }
 .header-icon {
   padding-left: 0.5rem;

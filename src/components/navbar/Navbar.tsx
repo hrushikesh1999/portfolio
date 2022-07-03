@@ -18,6 +18,9 @@ import { NavLink } from "react-router-dom";
 import { Grid, ListItemIcon } from "@mui/material";
 import ThemeSwitch from "../ThemeSwitch";
 import "./navbar.css";
+import logo from "../../assets/hk-logo.png";
+import HSvg from "./HSvg";
+import { motion } from "framer-motion";
 
 const drawerWidth = 240;
 
@@ -34,9 +37,7 @@ const Navbar = () => {
       onClick={handleDrawerToggle}
       bgcolor="background.default"
     >
-      <Typography variant="h6" sx={{ my: 2 }} className="gradient-text">
-        MUI
-      </Typography>
+      <HSvg />
       <Divider />
       <List>
         {routes.map((item, i) => (
@@ -48,7 +49,7 @@ const Navbar = () => {
                   selected={isActive}
                 >
                   <ListItemIcon>
-                    <FontAwesomeIcon icon={item.icon} />
+                    <FontAwesomeIcon icon={item.icon} color={item.color} />
                   </ListItemIcon>
                   <ListItemText primary={item.name} />
                 </ListItemButton>
@@ -78,14 +79,8 @@ const Navbar = () => {
               </IconButton>
             </Grid>
             <Grid item sm={1} xs={8} className="navbar-logo">
-              <Typography
-                variant="h6"
-                component="div"
-                className="gradient-text"
-                sx={{ mr: 2 }}
-              >
-                MUI
-              </Typography>
+              <HSvg />
+              {/* <img src={logo} width="40" height="25" /> */}
             </Grid>
             <Grid
               item
