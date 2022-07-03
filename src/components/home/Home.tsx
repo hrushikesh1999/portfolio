@@ -48,8 +48,10 @@ const Home = () => {
         <motion.div variants={item}>
           <Typography
             variant="h1"
-            color="primary.dark"
-            sx={{ mt: 1, fontSize: "calc(30px + 7vw)" }}
+            sx={{
+              mt: 1,
+              fontSize: "calc(30px + 7vw)",
+            }}
           >
             Hrushikesh
           </Typography>
@@ -58,7 +60,7 @@ const Home = () => {
           <Typography variant="h3" component="span" color="text.secondary">
             I'm a{" "}
           </Typography>
-          <Typography variant="h3" component="span">
+          <Typography variant="h3" className="gradient-text" component="span">
             Web Developer.{" "}
           </Typography>
         </motion.div>
