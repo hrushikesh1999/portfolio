@@ -3,6 +3,7 @@ import "./App.css";
 import Layout from "./components/layout/Layout";
 import AppRoutes from "./components/routes/AppRoutes";
 import GlobalState from "./components/GlobalState";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           </Layout>
         </GlobalState>
       </BrowserRouter>
+      <Analytics />
     </div>
   );
 }
