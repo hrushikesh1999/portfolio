@@ -4,6 +4,7 @@ import Layout from "./components/layout/Layout";
 import AppRoutes from "./components/routes/AppRoutes";
 import GlobalState from "./components/GlobalState";
 import { Analytics } from "@vercel/analytics/react";
+import "ol/ol.css"
 
 function App() {
   return (
